@@ -310,6 +310,13 @@
            </widget>
           </item>
           <item>
+           <widget class="QPushButton" name="wbReLoad">
+            <property name="text">
+             <string>ReLoad</string>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QPushButton" name="wbOffBizLog">
             <property name="text">
              <string>Disable/off</string>
