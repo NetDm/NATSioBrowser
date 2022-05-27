@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+//user
+#include "natsio/natsclient.h"
+//
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -25,7 +27,9 @@ private slots:
 private:
     Ui::MainWindow *ui;
     //user
+    Nats::Client *client;
+
     void openDefaultIni();
-    void on_PathIniFileChanged();
+    void on_PathIniFileChanged();    
 };
 #endif // MAINWINDOW_H

@@ -1,4 +1,6 @@
-QT       += core gui
+QT += core gui
+QT += network
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,7 +15,10 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    natsio/natsclient.h
+HEADERS += ../../natsclient.h
+
 
 FORMS += \
     mainwindow.ui
